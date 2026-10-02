@@ -1,0 +1,405 @@
+{
+ "assault-rifle": {
+  "kind": "shoulder",
+  "blade": 25,
+  "twist": 40,
+  "protract": 18,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.2704,
+   -0.1253,
+   -0.3714
+  ],
+  "q": [
+   0.00365,
+   -0.9962,
+   0.06966,
+   0.05221
+  ],
+  "pivot": [
+   0.3149,
+   -0.054,
+   0.0515
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 2.4,
+  "sinkVerts": 8,
+  "oneHanded": false
+ },
+ "battle-rifle": {
+  "kind": "shoulder",
+  "blade": 25,
+  "twist": 40,
+  "protract": 18,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.2637,
+   -0.1052,
+   -0.4445
+  ],
+  "q": [
+   0.00274,
+   -0.99726,
+   0.05226,
+   0.05226
+  ],
+  "pivot": [
+   0.3149,
+   -0.054,
+   0.0515
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 1.6,
+  "sinkVerts": 6,
+  "oneHanded": false
+ },
+ "shotgun": {
+  "kind": "shoulder",
+  "blade": 25,
+  "twist": 40,
+  "protract": 18,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.2561,
+   -0.1113,
+   -0.5075
+  ],
+  "q": [
+   0.00365,
+   -0.9962,
+   0.06966,
+   0.05221
+  ],
+  "pivot": [
+   0.3149,
+   -0.054,
+   0.0515
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": false
+ },
+ "sniper": {
+  "kind": "shoulder",
+  "blade": 25,
+  "twist": 40,
+  "protract": 18,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.2372,
+   -0.0202,
+   -0.6386
+  ],
+  "q": [
+   0.00183,
+   -0.99802,
+   0.03485,
+   0.0523
+  ],
+  "pivot": [
+   0.3086,
+   -0.034,
+   0.0535
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 1.0,
+  "sinkVerts": 4,
+  "oneHanded": false
+ },
+ "smg": {
+  "kind": "extend",
+  "blade": 8,
+  "twist": 12,
+  "protract": 10,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.01
+  ],
+  "offset": [
+   0.1609,
+   -0.2097,
+   -0.5308
+  ],
+  "q": [
+   0.00061,
+   -0.99924,
+   0.03489,
+   0.01744
+  ],
+  "pivot": [
+   0.2346,
+   0.0407,
+   0.0249
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 0.1,
+  "sinkVerts": 3,
+  "oneHanded": false
+ },
+ "rocket-launcher": {
+  "kind": "rest",
+  "blade": 14,
+  "twist": 24,
+  "protract": 14,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.2193,
+   0.1671,
+   -0.7049
+  ],
+  "q": [
+   0.0,
+   0.99966,
+   -0.02618,
+   0.0
+  ],
+  "pivot": [
+   0.2151,
+   0.0431,
+   0.0958
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 0.4,
+  "sinkVerts": 4,
+  "oneHanded": false
+ },
+ "magnum": {
+  "kind": "extend",
+  "blade": 0,
+  "twist": 8,
+  "protract": 0,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.1337,
+   -0.1787,
+   -0.6153
+  ],
+  "q": [
+   0.00274,
+   -0.99726,
+   0.05226,
+   0.05226
+  ],
+  "pivot": [
+   0.2347,
+   0.0399,
+   -0.0244
+  ],
+  "reachCm": {
+   "right": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": true
+ },
+ "plasma-pistol": {
+  "kind": "extend",
+  "blade": 0,
+  "twist": 8,
+  "protract": 0,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.1047,
+   -0.2233,
+   -0.6763
+  ],
+  "q": [
+   0.00274,
+   -0.99726,
+   0.05226,
+   0.05226
+  ],
+  "pivot": [
+   0.2347,
+   0.0399,
+   -0.0244
+  ],
+  "reachCm": {
+   "right": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": true
+ },
+ "needler": {
+  "kind": "extend",
+  "blade": 0,
+  "twist": 8,
+  "protract": 0,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.1235,
+   -0.2996,
+   -0.5703
+  ],
+  "q": [
+   0.00274,
+   -0.99726,
+   0.05226,
+   0.05226
+  ],
+  "pivot": [
+   0.2347,
+   0.0399,
+   -0.0244
+  ],
+  "reachCm": {
+   "right": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": true
+ },
+ "plasma-rifle": {
+  "kind": "extend",
+  "blade": 0,
+  "twist": 8,
+  "protract": 0,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.1288,
+   -0.3114,
+   -0.5957
+  ],
+  "q": [
+   0.00274,
+   -0.99726,
+   0.05226,
+   0.05226
+  ],
+  "pivot": [
+   0.2347,
+   0.0399,
+   -0.0244
+  ],
+  "reachCm": {
+   "right": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": true
+ },
+ "energy-sword": {
+  "kind": "extend",
+  "blade": 0,
+  "twist": 10,
+  "protract": 0,
+  "leftSlide": [
+   0.0,
+   0.0,
+   -0.0
+  ],
+  "offset": [
+   0.0776,
+   -0.3796,
+   -0.4993
+  ],
+  "q": [
+   -0.00606,
+   -0.98421,
+   -0.17354,
+   0.03437
+  ],
+  "pivot": [
+   0.2354,
+   0.0403,
+   -0.0162
+  ],
+  "reachCm": {
+   "right": 0.2
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": true
+ },
+ "gravity-hammer": {
+  "kind": "carry",
+  "blade": 0,
+  "twist": 12,
+  "protract": 0,
+  "leftSlide": [
+   -0.0201,
+   0.0736,
+   0.0051
+  ],
+  "offset": [
+   -0.0378,
+   -0.3981,
+   -0.3627
+  ],
+  "q": [
+   -0.33168,
+   -0.94077,
+   0.06628,
+   0.02337
+  ],
+  "pivot": [
+   0.2357,
+   0.0407,
+   -0.008
+  ],
+  "reachCm": {
+   "right": 0.0,
+   "left": 0.0
+  },
+  "sinkCm": 0.0,
+  "sinkVerts": 0,
+  "oneHanded": false
+ }
+}
