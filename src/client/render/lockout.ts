@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { loadResource } from './load-resource.ts'
 import { LOCKOUT_IMPORT } from '../../shared/lockout.ts'

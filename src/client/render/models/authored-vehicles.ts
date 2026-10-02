@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
@@ -67,7 +68,7 @@ function source(kind: VehicleKind, level: number): Promise<THREE.Object3D> {
   const key = `${kind}${level ? `-lod${level}` : ''}`
   let promise = sources.get(key)
   if (!promise) {
-    promise = loader.loadAsync(`/assets/ce-models/${key}.glb`).then(gltf => {
+    promise = loader.loadAsync(assetUrl(`/assets/ce-models/${key}.glb`)).then(gltf => {
       gltf.scene.traverse(node => {
         if (typeof node.userData.export_name === 'string') node.name = node.userData.export_name
         const mesh = node as THREE.Mesh

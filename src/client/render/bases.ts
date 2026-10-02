@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { BASE_GEOMETRY, baseWallRadius, baseWallPlane } from '../../shared/base-collision.ts'
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
@@ -531,7 +532,7 @@ function bounceFollowsBake(mat: THREE.MeshStandardMaterial): THREE.MeshStandardM
  * It loads after the drum is up. The building is complete without it, just plainer, which is
  * what a slow connection should see rather than a hole.
  */
-const DETAIL_KIT_URL = '/assets/ce-models/base-detail.glb'
+const DETAIL_KIT_URL = assetUrl('/assets/ce-models/base-detail.glb')
 
 /**
  * The field in the frame: a rippling green sheet, drawn additive and double-sided so it reads

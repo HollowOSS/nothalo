@@ -1,0 +1,138 @@
+[
+  {
+    "file": "src/shared/blood-gulch-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/epitaph-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/guardian-collision-data.ts",
+    "exports": [
+      "GUARDIAN_COLLISION_DATA"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/guardian-collision-meta.ts",
+    "exports": [
+      "GUARDIAN_COLLISION_BOUNDS"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/guardian-nav-data.ts",
+    "exports": [
+      "GUARDIAN_NAV_DATA"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/guardian-nav-meta.ts",
+    "exports": [
+      "GUARDIAN_NAV_META"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/hitbox-data.ts",
+    "exports": [
+      "HITBOX_PITCHES",
+      "HITBOX_KINDS",
+      "HITBOX_NAMES",
+      "HITBOX_RADII",
+      "HITBOX_STAND",
+      "HITBOX_CROUCH",
+      "HITBOX_HEADINGS",
+      "HITBOX_PHASES",
+      "HITBOX_MOVING_MM",
+      "HITBOX_MOVING_BACK_MM"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/lockout-collision-data.ts",
+    "exports": [
+      "LOCKOUT_COLLISION_DATA"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/lockout-nav-data.ts",
+    "exports": [
+      "LOCKOUT_NAV_DATA"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/lockout-spawn-data.ts",
+    "exports": [
+      "LOCKOUT_SPAWN_COLLISION_HASH",
+      "LOCKOUT_RESPAWNS"
+    ],
+    "default": false
+  },
+  {
+    "file": "src/shared/narrows-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/rats-nest-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/sandtrap-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/the-pit-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/valhalla-meta.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/blood-gulch-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/epitaph-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/narrows-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/rats-nest-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/sandtrap-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/the-pit-data.ts",
+    "exports": [],
+    "default": true
+  },
+  {
+    "file": "src/shared/valhalla-data.ts",
+    "exports": [],
+    "default": true
+  }
+]

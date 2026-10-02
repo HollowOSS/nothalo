@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import * as THREE from 'three'
 
 /** Deterministic authored PBR surfaces. No downloaded game textures. */
@@ -59,7 +60,7 @@ const scannedTextures=new Map<string,THREE.Texture>()
 export function scannedSurface(material:THREE.MeshStandardMaterial,asset:string,strength=1):void {
   const get=(kind:string)=>{
     const key=`${asset}_${kind}`,cached=scannedTextures.get(key);if(cached)return cached
-    const t=new THREE.TextureLoader().load(`/assets/guardian/${key}.jpg`)
+    const t=new THREE.TextureLoader().load(assetUrl(`/assets/guardian/${key}.jpg`))
     t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=8
     if(kind==='diff')t.colorSpace=THREE.SRGBColorSpace
     scannedTextures.set(key,t);return t

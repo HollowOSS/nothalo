@@ -509,6 +509,7 @@ export function createMenu(selectedMap: MapId, onStage: (stage: string | null) =
 }
 
 export function installMenuMascot(root: HTMLElement): () => void {
+if (!root.querySelector('.menu-mascot')) return () => {}
 const mascot = root.querySelector<HTMLElement>('.menu-mascot')!
 const mascotHead = root.querySelector<HTMLElement>('.mascot-head-hit')!
 const hangImage = root.querySelector<HTMLImageElement>('.mascot-hang')!

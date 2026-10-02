@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import {applyBloodGulchSurface} from './blood-gulch-look.ts'
 import {TELEPORTERS} from '../../shared/map.ts'
 import * as THREE from 'three'

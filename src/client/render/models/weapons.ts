@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js'
@@ -609,7 +610,7 @@ function assaultRifle(): THREE.Object3D {
 let generatedRifle: THREE.Group | null = null
 
 export async function preloadGeneratedRifle(): Promise<void> {
-  const gltf = await new GLTFLoader().loadAsync('/assets/weapons/assault-rifle.glb')
+  const gltf = await new GLTFLoader().loadAsync(assetUrl('/assets/weapons/assault-rifle.glb'))
   const model = gltf.scene
   model.rotation.y = Math.PI / 2
   model.updateMatrixWorld(true)
@@ -625,7 +626,7 @@ export async function preloadGeneratedRifle(): Promise<void> {
     if ((o as THREE.Mesh).isMesh) { o.castShadow = true; o.receiveShadow = true }
   })
   model.name = 'MA5B-side-profile'
-  model.userData.source = '/assets/weapons/assault-rifle.glb'
+  model.userData.source = assetUrl('/assets/weapons/assault-rifle.glb')
   // Keep import transforms below the viewmodel root, whose scale and rotation change.
   generatedRifle = new THREE.Group()
   generatedRifle.add(model)

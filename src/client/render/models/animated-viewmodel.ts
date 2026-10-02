@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import {finishWeapon} from './weapon-finish.ts'
 import * as THREE from 'three'
 import { injectShieldRim, firstPersonShieldFlash, FIRST_PERSON_SHIELD_WASH, teamMap } from './character.ts'
@@ -186,7 +187,7 @@ export async function loadAnimatedViewmodel(id: ModelId): Promise<AnimatedViewmo
   }
   const object = new THREE.Group()
   object.name = `animated-viewmodel:${id}`
-  object.userData.source = `/assets/viewmodels/${id}.glb`
+  object.userData.source = assetUrl(`/assets/viewmodels/${id}.glb`)
   object.add(inner)
   const sourceMuzzle = named(inner, 'anchor:muzzle')
   if (!sourceMuzzle) throw new Error(`${id}.glb is missing anchor:muzzle`)

@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import {createMuzzleFlash} from './muzzle-flash.ts'
 import { firstPersonBodyGeometry } from './first-person-body.ts'
 import * as THREE from 'three'
@@ -28,7 +29,7 @@ const forceHighDetail = new URLSearchParams(location.search).get('character-deta
  * it leans back about the feet (radians; hips behind the eye, boots still under it), and how much more while crouched (the crouched knees
  * otherwise come up in front of the lens). `?fpbody=cut,back,crouchBack,tilt,crouchTilt` tunes it. */
 const FP_BODY = (() => { const q = new URLSearchParams(location.search).get('fpbody')?.split(',').map(Number); return { cut: q?.[0] ?? .62, back: q?.[1] ?? .02, crouchBack: q?.[2] ?? .3, tilt: q?.[3] ?? .24, crouchTilt: q?.[4] ?? 0 } })()
-const URL = '/assets/characters/spartan.glb'
+const URL = assetUrl('/assets/characters/spartan.glb')
 
 /** Clip names as merged into the file. */
 const IDLE = 'idle'

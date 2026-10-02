@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import {finishWeapon} from './weapon-finish.ts'
 import { loadResource } from '../load-resource.ts'
@@ -8,7 +9,7 @@ import { registerModel, hasModel } from '../models.ts'
 /**
  * The authored weapons, as everyone else sees them in your hands.
  *
- * The first-person view has always loaded the Blender models from `/assets/viewmodels`; the
+ * The first-person view has always loaded the Blender models from assetUrl(`/assets/viewmodels`); the
  * weapon in a remote player's hands was still the older procedural mesh from the registry, so
  * the rocket launcher across the canyon was not the rocket launcher you were holding. These are
  * the same authored meshes packaged as world models, with the LOD chain the vehicles use.

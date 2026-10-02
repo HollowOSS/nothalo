@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Fixed scale and cover: a game that pinch-zooms or scrolls under the thumb is unplayable,
+         and the safe-area inset is what keeps the fire button off the home indicator. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+
+    <title>Not Halo</title>
+
+
+
+    <!-- Installed to the home screen, the game runs as its own full-screen app. The manifest's scope is the whole site, so
+         switching levels (/narrows, /guardian ...) stays inside the app instead of iOS opening an in-app browser over it. -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Not Halo" />
+    <meta name="theme-color" content="#000000" />
+    <!-- Show the menu before the game runtime; prioritize the identity artwork. -->
+
+
+
+    <style>
+      html, body { margin: 0; height: 100%; background: #000; overflow: hidden; overscroll-behavior: none; }
+      body { touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+      canvas { display: block; width: 100%; height: 100%; touch-action: none; }
+    </style>
+
+
+
+
+
+
+
+  <script type="module" src="/src/bootstrap.ts"></script></head>
+  <body>
+    <div class="menu-backdrop" aria-hidden="true"></div>
+    <div class="menu" id="menu-shell">
+      <div class="menu-group menu-brand">
+
+        <h1>Blood Gulch</h1>
+        <div class="sub">Halo-style multiplayer in your browser</div>
+      </div>
+
+      <div class="menu-group menu-form">
+      <div class="mm" id="menu-matchmaking">
+        <div class="mm-online" id="menu-online-count" aria-live="polite"><span class="mm-dot" aria-hidden="true"></span><span class="mm-online-text">Connecting…</span></div>
+      </div>
+      <div class="custom-game" id="menu-custom" hidden>
+      <div class="field-pair">
+      <div class="field"><label for="menu-map">Map</label><select id="menu-map"><option value="blood-gulch">Blood Gulch · open canyon</option><option value="guardian">Guardian · forest arena</option><option value="lockout">Lockout · frozen Forerunner arena</option><option value="the-pit">The Pit · training hangar</option><option value="narrows">Narrows · Forerunner bridge</option><option value="sandtrap">Sandtrap · desert ruins</option><option value="valhalla">Valhalla · riverside valley</option><option value="epitaph">Epitaph · Forerunner cathedral</option><option value="rats-nest">Rat’s Nest · underground base</option></select></div>
+      <div class="field"><label for="menu-mode">Game</label><select id="menu-mode"><option value="slayer">Slayer</option><option value="ffa">Free for All</option></select></div>
+      </div>
+      <div class="field">
+        <label for="menu-room">Match</label>
+        <input id="menu-room" maxlength="32" autocomplete="off" autocapitalize="off" autocorrect="off"
+          spellcheck="false" placeholder="gulch">
+        <div class="count" id="menu-count">checking…</div>
+      </div>
+      </div>
+      <div class="field">
+        <label for="menu-name">Name</label>
+        <input id="menu-name" maxlength="16" autocomplete="off" autocapitalize="off"
+          autocorrect="off" spellcheck="false" placeholder="Spartan">
+      </div>
+      </div>
+      <div class="menu-group menu-actions">
+        <div class="mm-search" id="menu-search" role="status" aria-live="polite" hidden></div>
+        <button class="primary" id="menu-online" disabled>Find match</button>
+        <button class="secondary" id="menu-bots" disabled>Play against bots</button>
+        <button class="menu-link" id="menu-custom-toggle" type="button">Custom game</button>
+        <div class="level-loading" role="status" aria-live="polite"><span class="loading-spinner" aria-hidden="true"></span><span class="loading-status">Starting camera…</span><button class="loading-retry" hidden>Try again</button><a href="/" hidden>All levels</a></div>
+      </div>
+      <div class="note" id="menu-note">Find match puts you in the busiest game with room: Team Slayer, Big Team or free for all.</div>
+      <div class="note custom-note" hidden>Everyone who picks the same match name plays together, up to
+        <span id="menu-capacity">16</span>. Share the link once you are in.</div></div>
+
+</body>
+</html>

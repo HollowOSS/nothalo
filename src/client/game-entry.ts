@@ -1,3 +1,4 @@
+import { assetUrl } from '../shared/runtime-config.ts'
 import { isArena, arenaMeta } from '../shared/arena.ts'
 import { renderFirstPerson } from './render/first-person-pass.ts'
 import { MAP_NAMES, levelUrl, type MapId } from '../shared/maps.ts'
@@ -146,7 +147,7 @@ export async function startGame(selectedMap: MapId, onStage: (stage: string | nu
     const current = () => version === generation && !inMatch
     const stage = (text: string | null) => { if (current()) onStage(text) }
     menu?.loading()
-    if (!active && backdrop) backdrop.style.backgroundImage = `url('/assets/menu/${map}.jpg')`
+    if (!active && backdrop) backdrop.style.backgroundImage = `url("${assetUrl(`/assets/menu/${map}.jpg`)}")`
     const sceneryStage = `Loading ${MAP_NAMES[map]} scenery…`
     stage(sceneryStage)
     const scenery = maps.request(map, current, entry => { if (current()) activate(entry) })
@@ -255,11 +256,7 @@ export async function startGame(selectedMap: MapId, onStage: (stage: string | nu
   // After the game: matchmade games search again (a new map), bot matches move to another map, custom games stay.
   updateHud = createHud(match, () => input.active, touch, choice.name, common.voice, !net ? 'map' : choice.playlist ? 'match' : 'stay')
   // Development builds only: drawing the hit shapes is a check, not something to ship.
-  if (import.meta.env.DEV && params.has('hitboxes')) {
-    const { createHitboxOverlay } = await import('./game/hitbox-overlay.ts')
-    const live = match
-    hitboxOverlay = createHitboxOverlay(scene, () => live.others)
-  }
+
   onStage(null)
   if (!scripted) input.start()
   // __THREE: the tools that stage shots in the page (tools/trailer) build vectors and quaternions with the game's own three.js

@@ -22,6 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+import { assetUrl } from '../shared/runtime-config.ts'
 import { MAP_NAMES, mapFromUrl, levelUrl } from '../shared/maps.ts'
 import { showLoading } from './hud/loading.ts'
 import { createMenu } from './hud/menu.ts'
@@ -37,7 +38,7 @@ if (!routeMap && !isHome) {
   document.title = `${MAP_NAMES[selectedMap]} · Halo`
   const scripted = ['cam', 'nooverlay', 'offline'].some(key => url.searchParams.has(key))
   const backdrop = document.querySelector<HTMLElement>('.menu-backdrop')!
-  if(['blood-gulch','guardian','lockout'].includes(selectedMap))backdrop.style.backgroundImage = `url('/assets/menu/${selectedMap}.jpg')`
+  if(['blood-gulch','guardian','lockout'].includes(selectedMap))backdrop.style.backgroundImage = `url("${assetUrl(`/assets/menu/${selectedMap}.jpg`)}")`
   if (scripted) {
     document.querySelector('#menu-shell')?.remove()
     backdrop.remove()

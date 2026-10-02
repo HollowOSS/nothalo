@@ -1,0 +1,10 @@
+// Reconstructed barrel: the deployment source map omitted this re-export-only module.
+export { Input } from './input.ts'
+export { TouchControls, wantsTouchControls } from './touch.ts'
+export { Match } from './match.ts'
+export { CombatAudio } from './combat-audio.ts'
+export { MedalAnnouncer } from '../hud/medal-announcer.ts'
+export { createHud } from '../hud/hud.ts'
+export { preloadSpartan } from '../render/models/character.ts'
+export { registerAuthoredWeapons } from '../render/models/authored-weapons.ts'
+export { preloadGeneratedRifle } from '../render/models/weapons.ts'

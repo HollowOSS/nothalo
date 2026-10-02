@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { loadResource } from './load-resource.ts'
 import { GUARDIAN_IMPORT } from '../../shared/guardian-import.ts'
@@ -8,7 +9,7 @@ import { bakeGuardianLight, dressGuardianMaterials, GUARDIAN_SKY } from './guard
 /** The downloaded Halo Online Guardian (CC BY 4.0) is the visible architecture. It is placed
  * with the shared import transform, the same one baked into the generated collision data and
  * navigation grid, so the surfaces a player sees are the surfaces that stop them. */
-const MODEL_URL = '/assets/guardian/guardian-reference.glb'
+const MODEL_URL = assetUrl('/assets/guardian/guardian-reference.glb')
 
 /** Every Guardian material is exported with metalness 0 and KHR_materials_specular at factor 0, so
  * it has no specular response at all: the physical BRDF three builds for it spends most of each

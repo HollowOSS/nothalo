@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import { getSharedAudioContext, onAudioActivation, resumeAudio } from '../game/audio-activation.ts'
 /** `id` names the recording to play (public/assets/audio/announcer/<id>.mp3). */
 export interface MedalCall { id: string; label: string; category: string; time: number }
@@ -29,7 +30,7 @@ export class MedalAnnouncer {
   constructor(getMuted: () => boolean) {
     this.getMuted=getMuted
     for (const id of RECORDINGS) this.encoded.set(id,
-      fetch(`/assets/audio/announcer/${id}.mp3`, { priority: 'low' }).then(r => r.ok ? r.arrayBuffer() : null).catch(() => null))
+      fetch(assetUrl(`/assets/audio/announcer/${id}.mp3`), { priority: 'low' }).then(r => r.ok ? r.arrayBuffer() : null).catch(() => null))
     this.removeActivation = onAudioActivation(this.activate)
     addEventListener('blur',this.clear)
     document.addEventListener('visibilitychange',this.onVisibility)

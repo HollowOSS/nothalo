@@ -1,0 +1,936 @@
+{
+  "sources": {
+    "src/shared/playlists.ts": {
+      "bundle": "https://nothalo.lol/assets/menu-DL79FAAV.js",
+      "sha256": "f5970b3e8641369ca276142f5544875c5e5e4368f4e70fc39aa6e245f1c0bde8"
+    },
+    "src/client/hud/menu.ts": {
+      "bundle": "https://nothalo.lol/assets/menu-DL79FAAV.js",
+      "sha256": "dafc0456651923d5785392c595ccede97779c3ec27a9b72d12f07d1305683257"
+    },
+    "src/client/hud/loading.ts": {
+      "bundle": "https://nothalo.lol/assets/index-Dtuoxbwo.js",
+      "sha256": "5237d56a2f1a9d762efd902b646820471206f14172422845d1d522f21ea46e15"
+    },
+    "src/client/main.ts": {
+      "bundle": "https://nothalo.lol/assets/index-Dtuoxbwo.js",
+      "sha256": "2bc0196fbdfeda2f6326fca11c933ac390cf7dcc0d88a3e123740a4bcad7acb0"
+    },
+    "src/shared/units.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "3484191a989b86bf850860ebdbf49aa50dfd3a5a96d75038500e83b132e3d993"
+    },
+    "src/shared/presentation.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "f0211b8d124269e66bdac011825ef75f644f80ac773ff60f165635aa604383cc"
+    },
+    "src/shared/constants.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "4b10110c4cc86188f96fec3e5a60ac58afd3ea8dbc9c35f636d78e070f95e80d"
+    },
+    "src/shared/map.ts": {
+      "bundle": "https://nothalo.lol/assets/map-C6m3XMYz.js",
+      "sha256": "054f266841b98a7ea1cba79754269d02b344670a5bb6aaf9e5281312df4bc343"
+    },
+    "src/shared/maps.ts": {
+      "bundle": "https://nothalo.lol/assets/protocol-C_flp5uc.js",
+      "sha256": "3adc20ea7f71bded1a6213009138ccb8d3ac24b50f6f0ed2d64481f24462dd0c"
+    },
+    "src/shared/game-modes.ts": {
+      "bundle": "https://nothalo.lol/assets/protocol-C_flp5uc.js",
+      "sha256": "34938a8cea47b66bd26adc24301cbd641ab14eacb0b7434b7d8c89b8fee68ddf"
+    },
+    "src/shared/protocol.ts": {
+      "bundle": "https://nothalo.lol/assets/protocol-C_flp5uc.js",
+      "sha256": "a28a6863dacb3016d051cda6c895b830e2a8d38a8a22cdafe02ad1ba067e7a4e"
+    },
+    "src/shared/packed-integers.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "90de9e50ee38cf330e07962d5b97c73eb1b84dcd19f344c07674c91c7fcba00a"
+    },
+    "src/shared/blood-gulch-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "45ae3da69533db8bfb8a0dc8edf560fe1f43c7d29faab91d8c2cf7ea33a8ae83"
+    },
+    "src/shared/the-pit-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "4e7bd56a88c13d040a2e12302962a29b32e0847f2aa7c4c7f69b47f334e34e64"
+    },
+    "src/shared/narrows-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "ca328207a871e2d4c6f491c1fd2292de5b04edf0de9bc554a2c51996d26db518"
+    },
+    "src/shared/sandtrap-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "109d4f04aa45995d0706a6f8c958044a01106672527f9e78351c8b87ac5afb0e"
+    },
+    "src/shared/valhalla-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "8e3753672cb8e8b2551f8e67d446113e6a20285d970a98ab9e69c72b7ddf020f"
+    },
+    "src/shared/epitaph-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "ad5c0e54864d918c379c100ca5dced13a3a8f6759cdc3d856c71be2edb59f566"
+    },
+    "src/shared/rats-nest-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "7febff051ee8c73f0c152cf1638e6f2de4b1aac170ab05c5dd09800d47637c53"
+    },
+    "src/shared/arena-lifts.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "7646e9bd1fedaf0a7961febf2135de6b6567b0f9121dbf0db7862cfa4e790b96"
+    },
+    "src/shared/valhalla-lifts.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "37c83664d85a8bde96d4244c1fde0e569fb0c0e3eb899474271938a07d0dd6b9"
+    },
+    "src/shared/arena-controller.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "444678f0a5d90c50a624e2ee3ef46ae7ec9c2121e582dbe382e1511503c10ed3"
+    },
+    "src/shared/arena.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "17e703dbce407639736a578b8599b4302f180912fe17674c59def61c88dc4e99"
+    },
+    "src/client/render/scene-resources.ts": {
+      "bundle": "https://nothalo.lol/assets/scene-resources-C2eXww58.js",
+      "sha256": "ff7bbea253a5e4b658632c49d8e12ff017a672f2aeaa40369756efd8fd48c5c6"
+    },
+    "src/shared/level-data.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "d7b5b86b355a596c15bd6fca1b8819ca2ba22673dbbeae1f24e86b67bfa122f4"
+    },
+    "src/client/render/quality.ts": {
+      "bundle": "https://nothalo.lol/assets/renderer-settings-B3Qr8Qkl.js",
+      "sha256": "117e0fd435eb07ec31061cd881597b9f2073dc005de319506aba7489fd4092d6"
+    },
+    "src/client/render/renderer-settings.ts": {
+      "bundle": "https://nothalo.lol/assets/renderer-settings-B3Qr8Qkl.js",
+      "sha256": "4a4184077868414bb364d5dca0d963f40d7f70b93ecf75ccf66ea0676bf89e19"
+    },
+    "src/shared/noise.ts": {
+      "bundle": "https://nothalo.lol/assets/field-CUl3zNCP.js",
+      "sha256": "ca1c577d6b59e8857e2d2ce609dce50e6d0f65f0656e2ef684cda2979b07a0e4"
+    },
+    "src/shared/field.ts": {
+      "bundle": "https://nothalo.lol/assets/field-CUl3zNCP.js",
+      "sha256": "ea92c86f961daf6f2b00813614ae67c5028810e0b40cc1dfd42d1b320637ca1d"
+    },
+    "src/shared/guardian-collision-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "6c04e715a293306a2f481199893f9b9d9d390b3021df508440e98d42bf5a4406"
+    },
+    "src/shared/guardian-collision.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "0f6a77d974e665e86d04080f70f03d901e519444a94072f138e20eaf1c833923"
+    },
+    "src/client/render/models/viewmodel-look.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "11d2987e20e3f8c5cec8a2a815d1a3a679db6d9b058410f8dfb87e60c4a81648"
+    },
+    "src/client/render/first-person-pass.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "8f36d8236103d293833624345fbf4f35a3024a2208faabcf7ece7d886da5aacd"
+    },
+    "src/client/render/volumetric-light.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "f17b0e04b0e0461e6b1c54bad6334a9af909c09e2f46c38365ff1a839a91920c"
+    },
+    "src/client/render/bloom.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "f5cebed9b010bc6148823d1608113f2b822ce9182b4f4fb3d2e96a4f979cbd0f"
+    },
+    "src/client/render/static-lights.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "58634ed29d9a8c10d4f1a4ef9f07a7aaaa6e7d97e48be5af713ed28cc40a6452"
+    },
+    "src/client/render/prepare-weapons.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "7f9b198d77f8f93e78b3b6da1687f7f1bc3b6663f1577b769c3834674a852d8e"
+    },
+    "src/client/render/cache-budget.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "dcc27489621d6c1fe3319d62ee5d025497929921c430b2bf896ad5e44cf66b00"
+    },
+    "src/client/render/map-scenes.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "a1285b83a62a9ffb2a2afa3692247bc3f9cb10c9c8af601bfb140cef9116cc6e"
+    },
+    "src/client/debug/vantage.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "029384b716492444ad1d8deb183b5668db8750facc63ffb3e00ff8c7e6af245b"
+    },
+    "src/client/render/cinematic.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "054bc1eec389d77d52b58d44641b3436181c47ff3f127a6634f071668352c8c1"
+    },
+    "src/client/debug/stats.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "db603c96ff8d7b167c425f1f9f36055c936f57e6d431ec5e7c5341fa0d0fae3b"
+    },
+    "src/client/game-entry.ts": {
+      "bundle": "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+      "sha256": "49f4e3e6921c8a2c795c3e603079e54c8a6e150a8ed00d511208f6316da63356"
+    },
+    "src/client/render/sky.ts": {
+      "bundle": "https://nothalo.lol/assets/sky-CkiIN7Ne.js",
+      "sha256": "25c30a5d17751332d3240742f4126c1c1de5c5f1e6732c5596c5140924c107c9"
+    },
+    "src/shared/teleport.ts": {
+      "bundle": "https://nothalo.lol/assets/teleport-CwgMUhQy.js",
+      "sha256": "bf038ad410c76fa1d56ba63144efefd65488798cdec234ce7c1531bf187ac7c6"
+    },
+    "src/shared/lockout-transform.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "3ebc923f0fb353b563e6c081080093b1d06c9ebd47f2cf10bd10bc60b412a84e"
+    },
+    "src/shared/lockout-collision.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "3de3b640bd3095b0c96c6b271bf07f1c872b7d7c0ba4f36d98800da88606fbb0"
+    },
+    "src/shared/lockout.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "57ed2dd9cf73f2ed0e6c15462fe326512f717e7e93de25b072e8c78240e8aa71"
+    },
+    "src/shared/blood-gulch-data.ts": {
+      "bundle": "https://nothalo.lol/assets/blood-gulch-data-fHedBgQh.js",
+      "sha256": "8859e1cce978ecffc8b1925f2b13ae735158287be4f6a7868554e5db8ad3365a"
+    },
+    "src/shared/loadout.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "b01ba3fb639ba062a5dd445c9f9e354abb083cf3139b3476e3a74c87f59d01c4"
+    },
+    "src/shared/solid.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "84f41ff7623b719da29a1ec78af841b14ef46b077f0df817eb07e6f5227d6b3c"
+    },
+    "src/shared/guardian-spawns.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "a299ff9b4d9c61190669d184cf943439290eda47f8c971e218e94e5310db3f83"
+    },
+    "src/shared/lockout-spawn-data.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "02b8610feef0175e61f41d52023cd888e2c09e132f4edfb0a68c6dba5145278d"
+    },
+    "src/shared/spawn-selection.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "df9db89d9a2eea6926fc37e2788d53bb77cf94581ee4b33c26d4b901603c33bd"
+    },
+    "src/shared/spawns.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "d9920a332b8a3b72f5c0d7643e793749e483968e6439a7585f035e84dac7c23d"
+    },
+    "src/shared/weapon-pickups.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "06d85ed11341c215ad922dfb292d41f21a4a83290906ace4f3d139fb4b90df6e"
+    },
+    "src/shared/objectives.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "4372e3fab0b44e00f474e3ee450674b4a825f77dafc26cfd239cef84f57e0d7a"
+    },
+    "src/client/net/connection.ts": {
+      "bundle": "https://nothalo.lol/assets/connection-CitPzsqY.js",
+      "sha256": "df515bff654266cda1fb24e19700317c139aa17e31a8f4bed8f44bf156a8cf0a"
+    },
+    "src/shared/narrows-data.ts": {
+      "bundle": "https://nothalo.lol/assets/narrows-data-Ld7Dwctf.js",
+      "sha256": "6f99befc11fdb02611f757d6b29a038054ca5e54afc1d06c735ead942234b980"
+    },
+    "src/client/render/terrain/textures.ts": {
+      "bundle": "https://nothalo.lol/assets/textures-gEcHmWGQ.js",
+      "sha256": "e66b7288220b1346e805e2bf30ea80b61dd042a6a9f603148f1cb4d7061ceb1a"
+    },
+    "src/client/render/blood-gulch-look.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "22b536a68b6f4c03298ddb7348de5c856333cb6a79dc14f695af1393858ecd74"
+    },
+    "src/client/render/surface-detail.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "0e91e755da66c4b6a9633c786f899b1dd0bffc11e8ddf875af160199308835ab"
+    },
+    "src/client/render/valhalla-look.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "117f33c4042fe0e9c73a90ba051b5f29a814d716018e53889edb275efeb28418"
+    },
+    "src/client/render/arena-atmosphere.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "8900f23b8a7a591436bb65f579e622fd1c34ebde3b269989297094e892d00146"
+    },
+    "src/client/render/arena-light-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "6aa083f95dfa7e2da893725fa8ee1eecc0cf2e5aa8489603c060683b91c22834"
+    },
+    "src/client/render/arena.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-DhFseROD.js",
+      "sha256": "dea0308bcdd56fc916f498d8129c46a8baac750f8992d773bd4782e714163c0e"
+    },
+    "src/shared/valhalla-data.ts": {
+      "bundle": "https://nothalo.lol/assets/valhalla-data-DBIOdo1Y.js",
+      "sha256": "57e5f4fc55b060eef2b3f1db10bcaa06b228be57de6234588dcfe5aa55cbf257"
+    },
+    "src/shared/cover.ts": {
+      "bundle": "https://nothalo.lol/assets/cover-mKUpY_2M.js",
+      "sha256": "0647f39041d302b6dbb1634774563a06d984b18716113e17a3eb4a32a81bc510"
+    },
+    "src/shared/rats-nest-data.ts": {
+      "bundle": "https://nothalo.lol/assets/rats-nest-data-BIatXvjr.js",
+      "sha256": "24bb5ac707c00aa480da6949902f77fdfa87900d080d99fd82734f5d3223112b"
+    },
+    "src/client/render/guardian-legacy-solids.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "dd4ff6cd10a9437a008542059bb8185980d6b9674cff1a08b34c72b3765412f4"
+    },
+    "src/client/render/halo3-materials.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "1e893c619d4498ae63023cb06f062f21c33ede6a953b3333c0ddec40ffec388f"
+    },
+    "src/shared/guardian-import.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "60c63ef398372388ff4b47052e7a2de18bbc4b48e2e083d678dd9dcbea141806"
+    },
+    "src/client/render/guardian-lighting.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "91d931158cd344bbbd415f6a1b65cd75e6c8e199e649d25b06d096efd088da10"
+    },
+    "src/client/render/guardian-imported.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "4714c1400aece59f51d42627c0565423e2832e879dd09cfc70796f5af1a8c980"
+    },
+    "src/client/render/guardian-lift-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "61badbe913e6841624a27dc2c8841fd21df1a6712ba05b30b78055140aee1eab"
+    },
+    "src/client/render/guardian.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+      "sha256": "573f4765a3fab61197ffe0ec66190e01867eb75bbceb158723eb1ff29c69077f"
+    },
+    "src/shared/guardian-nav-meta.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-DxJ5ALvQ.js",
+      "sha256": "3b9b7cc39cbe298a2500a0f8e8ca1988fe7e54aa2dd7083b8e09e8413f6b6d2b"
+    },
+    "src/shared/guardian.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-DxJ5ALvQ.js",
+      "sha256": "01ff54146488e7508a336e62908af6a631656978e94c4f54baa0e7e72fbb2486"
+    },
+    "src/shared/assets.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "2d7b50570e10ad787f5737cf533371cdb339012edaf84f4051451b5da17288e0"
+    },
+    "src/client/render/models.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3310afc6ee9c3626cb534530dad4c6e2e110053d6f6302ddc15f38f561ef602d"
+    },
+    "src/client/render/models/warthog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "06c5415467b8228d2805eebc6202b7dfe894e984f040e08de83a109452a847ed"
+    },
+    "src/client/render/models/spartan/rig.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8c59848ceba05da5d3cc7ff431f016875c73d828bc76e04d4a0069816eab65b6"
+    },
+    "src/client/render/models/spartan/pose.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "b362caf0ec37a80361b341b063d6f84674680aa998093125e81cb40471e90318"
+    },
+    "src/client/render/models/spartan.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8b909dd9a74123e070691d2e94749d12cf09fae7d3f88bc4ad89831d8c5662dc"
+    },
+    "src/client/render/models/weapons.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "b8da7f6aa6b88521755c1065c55a6a8896c74338e14e3e3470b26ff32a7ab7e9"
+    },
+    "src/client/render/models/sniper.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "120fe0e3e2871c6f31e0b59028e1fa3c7bac8ee2952aecaa5939d0dfa38c3bf5"
+    },
+    "src/client/render/models/sniper-ghost.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "1c37eb38901818dc20634756179647560a4627552f1ff23247092f393dcb0d2d"
+    },
+    "src/client/render/models/pickups.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "0a2cb2c2274aea4b6a2fdd44972af7b6a5b285ba50b3107b3a19e5f2e3688b04"
+    },
+    "src/client/render/models/rocket-launcher.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "ebc7419484ea0e88648985b3cecc1b3e7b78c4d7a5240792a455e07267153724"
+    },
+    "src/client/game/scoped-aim.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "d5db4424b648f6496e677d34a647df677d28c4781a4fb3058122c5ad7dfbdb3b"
+    },
+    "src/client/game/input.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "95f0f183ea04e8ae990c42a3cdc72fbef4def0aeda737b77b972a5af97229129"
+    },
+    "src/client/game/touch-icons.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8690099fe562db4af46eef8af554619bc35ffd047f329d409bcabbb66f4d3d76"
+    },
+    "src/client/game/touch-layout.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "d688cf7ca3a3f08a4eb6331c982341de2b38ce934fb817c786a66516f3bbf028"
+    },
+    "src/client/game/touch.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "9f4a609b5dc716c9a01e881c92c9973d54584225b390966383c6aadb7e14775d"
+    },
+    "src/shared/hitbox-data.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3f29427d08e01fbf88a55c37227f53b43a2d2b2407f88a3fc3d069bcc081929b"
+    },
+    "src/shared/gait.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "2e6107b2cda8251fcf62880f32a0c4fd82950f8ac4195e0e5512239e2f360e73"
+    },
+    "src/shared/hitboxes.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "de8e0d021691fad7773b1c49d89f331359b9335755bc9e58aeafb8680e9f2ec0"
+    },
+    "src/client/render/plasma-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "f5229bef1e92993a12e4f80e8ccd91ea9d5c96418db4fb6efe147a76a15f5192"
+    },
+    "src/shared/plasma-charge.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "86634f61604130b4756372a0160df5bda9f98434903fc33d20781a25fdff7a2b"
+    },
+    "src/client/game/plasma-charge.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "b132ce705f61fd6564dbf064bac01b5e07c86b67f13f5a49ce9285a17a39d7aa"
+    },
+    "src/client/render/models/weapon-finish.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "4eddff67eb81bdc246322d0de7efd05b15c2281593f90c25b9d37035cc696390"
+    },
+    "src/client/render/models/plasma.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "edd95ab415b4561a50a4b751a54cd0f57a352bacba6480dfae15048b64e10ce3"
+    },
+    "src/client/render/models/authored-weapons.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5adedc160878036550700626ca706e619a591d5bb82ef750caccf6cb9ed2acd9"
+    },
+    "src/client/game/weapon-pickups.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "28e87d15a00aee40873d540a0587a185cc75fbf406626bb02f836165098a75b8"
+    },
+    "src/shared/arena-walking.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "45a4ab8491bc0f01bd3833d3a5af78ed43e833fd2c3108f2d0bd442f5454d455"
+    },
+    "src/shared/arena-navigation.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "383e18bc7535f5245050d509b16a0850621706563d32fc54939525eaadc9f837"
+    },
+    "src/shared/guardian-navigation.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8df569e6919c9bad92bff69d8ff18c275aeb8357188f332c17a7a060a8fa469d"
+    },
+    "src/client/game/guardian-bot-navigation.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "343d97cb28a400d840eb0c3f57869e42b4ab4eed23095735aa746c74f0cad0b9"
+    },
+    "src/client/game/arena-route-planner.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "6d1e1b1c4a47ec1a5716d555c40c4b33831165dd9581dc444d12812e029186d5"
+    },
+    "src/client/render/instance-raycast.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a4fd20d032246716241b912d9a4ca71fbf44329eb1396dd89eae2f25a2e89ca3"
+    },
+    "src/client/render/mesh-raycast.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "86cb6f9b213c3c3bb81147c69dbc3a07ac24371146fe3af3b977ccad5b6458e7"
+    },
+    "src/shared/lockout-navigation.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "bd6c996bcedf286165d223b5c3bf3c1ea6b68dba22de696eacf86726d2e235a6"
+    },
+    "src/client/game/lockout-bot-navigation.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "2ddd1a86d46d0a4782e5ca112b5922026ab4cf31922c5bd44865941c4ca95204"
+    },
+    "src/shared/blood-gulch-physics.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5c87b6c1a24b8c1f4664436d844cb6f5a1e57ca66153477945648e0fc8e964dd"
+    },
+    "src/shared/arena-physics.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7ca7408cb1cc63f28f8bfc83b47c4c493c3e4ec9b7781a768089511997950a44"
+    },
+    "src/shared/guardian-physics.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a465feda9792929cd2a6042d50ec6afc9dc5d66b9170428e9739bdaf4cc47423"
+    },
+    "src/shared/lockout-physics.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "21506640a3a1f2aedb639dee0e22f0751380c4a1870f619b7ab18bc72159f255"
+    },
+    "src/shared/dynamic-broadphase.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "f68c187998f0ff98d980127dbc28844c83fa819d71d23003886b033db708088f"
+    },
+    "src/shared/physics-world.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8397fad1414678143839b7efdee1225bf1931606a0313bb2785bae73fbee58be"
+    },
+    "src/shared/blast-impulse.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "708512f094b72095a23b61cf47602b610c61eeeb3b4c2864f23c31e934572122"
+    },
+    "src/client/render/ragdolls.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "1ec8b640ffe58bab74d832c29d268b4819b13a0bb5bf44ea715c1c8c9e9deb0a"
+    },
+    "src/client/game/corpse-crouch.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7bdb2c31f1a9adbfebff856a50683a367884d733c8de185a9a0235403082fa00"
+    },
+    "src/shared/needles.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "4e4897e01bff6330f844ed013049df647e1ebca272af347d29219a5fa21e0938"
+    },
+    "src/client/game/needler.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3852190900a5276ea39958ef82beb05e61e4d5a822860ca5385ac29385ad6dec"
+    },
+    "src/shared/kill-info.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "c50fb7b07b099be819aac661225c4605745b0b24b61d692a07093a0ea95e95ca"
+    },
+    "src/client/game/objective-view.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "fd68b8178fafbefabecfe9f1f6532574696e0aa7c8c1349ad55c6efe81751ab0"
+    },
+    "src/shared/vehicle-physics.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "01dbdb62de93d07e357cc164e0fb23b2c6775d93b8af875bf8eeb2d22ec36058"
+    },
+    "src/shared/vehicle-contacts.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "b9a61cc3ae3276edcf36cd60b765e4c766b60ba08b4cc0460855a80c9d75452f"
+    },
+    "src/shared/bullet-impact.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "87fe4f6a7721b59d330cf4f4febae3b87e4df274196965af8f772f5d2e920d27"
+    },
+    "src/client/game/halo2-audio-catalog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "724c9b5702b04cb6cfba9a84bc1e7849f54b842a83b54d6f8cfececbb9746561"
+    },
+    "src/client/game/halo-audio-catalog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "210891aea62db69fd74004ffa2d7f2bcaa9b2c7e7a21a3db841b7bd76e759f8f"
+    },
+    "src/client/game/weapon-audio.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "59b2a38e8fb463ecd44709d3b3fa3680651f9e43f577314d2e712387cd238f7e"
+    },
+    "src/client/game/audio-activation.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "4771a5ff5c427d599b865b791cad5974b3e82e35bb81f9ea9f45395603f1c84a"
+    },
+    "src/client/game/vehicle-collision-audio.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "608cf72e26e31b4c197ff154f1bc46ec0f396d9bb3a2e3cfa5dd10d5f9b73c97"
+    },
+    "src/client/game/vehicle-audio.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8e8916709fb0c5b4d5bc4e2739020992254355befe8ee91fe36c5c26a9bd3a8c"
+    },
+    "src/client/game/grenade-audio-catalog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5212aaad59a85b8b7007f49a4bd207c5a9e743ca4a5ada205cd22a17c5a781d6"
+    },
+    "src/client/game/foley-audio-catalog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "90a524ac3327e0c3dccf0fe2efcba7b2102a5f32dc2b8d39d89f561e6fbdbf90"
+    },
+    "src/client/game/vehicle-audio-catalog.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "bf9f0836c278eaf9e237a87a66ec4a5b6ef6039263bcc507524e514f887752f0"
+    },
+    "src/client/game/ambience-audio.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5afd6b7c606e320bed2239e8d554e7051e00f3d96a21bf1aff0ce8a2a989d4fb"
+    },
+    "src/client/game/combat-audio.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "073dd4d2f710a18947e1bbe91d31dffc5aad52061264ff042dd162c8584c26ad"
+    },
+    "src/client/game/weapon-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "6cb07408c9a6f396e1c895f81adf7f10ffb9a59e84a07b5f595c79fd39f6ca20"
+    },
+    "src/client/game/combat-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "187044811fa217a164fc0ca42d34874f9b980fa93de111a53c0f7c39c1fa585b"
+    },
+    "src/client/game/surface-map.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "6cc28cf5ce2a94f15fc34db230f64c799e9e29d0be06d64b2afe31c724a5efe4"
+    },
+    "src/client/game/spartan-foley.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5f5d777562a3eee8ad8a6bed382ceb35bd98a78bb0dcafb08e79601da8e6dc46"
+    },
+    "src/client/render/models/muzzle-flash.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "16d086842cbda2874313843e4990924db3096b9e18c0695f3d25e3c917f722f3"
+    },
+    "src/client/render/models/first-person-body.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7e925ebd8b54a24adc2eb9191f6a1ff104ed8c4be3f544cd7f17740c4c605ac2"
+    },
+    "src/client/render/models/finger-pose.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "09e763e8989b1885cee90e7c856767d384725e0ae35f439617595263939ec175"
+    },
+    "src/client/render/ik.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "0fea9ec6808a9b8505bcadca0983a57535df92e2fbbd2251e94b65b063111256"
+    },
+    "src/client/render/rifle-pose.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "5b4483c1c1e041b9837606d8075607a4016d8c6d2f6beed66f31b84bbf63682c"
+    },
+    "src/client/render/models/viewmodel.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "25bc6944d25ef305766db518d10a1ed524f230adfd20d0de540dee783b3c2040"
+    },
+    "src/client/render/models/chief-holds.json": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "466b2286c7fa08a823b753dfe230c6b7eb6a74070bc6a40d76af06cf6e721ece"
+    },
+    "src/client/render/models/tp-holds.json": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "01fe47cdc29775d7bf91933493feb42e5c5b374bd3af42cf1cf2ff681aa08f1f"
+    },
+    "src/client/render/models/armor-surface.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a0835f19918997ca7aa1c8bcc69446d1157c47fc8bc218dc838b5c04d47b04e7"
+    },
+    "src/client/render/models/leg-ik.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3bae229076d273cc106aa8ecefadb9170f062d3a7deb81196e3b71a1dedc8f66"
+    },
+    "src/client/render/models/character.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "2d27d0b5e1aa43e049d2dcc2a595a81a74ef6bacebe6a7f9606677430cbb706f"
+    },
+    "src/client/game/rocket-smoke.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "ccf84ca316ee1afadc588ad268ec09572400b5fd9cb1780201cfa1d58f585ca2"
+    },
+    "src/client/game/rockets.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "891bcb70f4c66fcc4836459bea9805d99e012719c9ab59a4ce2c039db8c9a209"
+    },
+    "src/client/game/explosion-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "ebb4669d149b45729f5047b1e57ef7d34fa03c176db223cf0c40fab5e5483850"
+    },
+    "src/client/game/grenade-world.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3476c129e4688a7d4e8276a6f0b3bffb59c498866312850636757d7e51aec55c"
+    },
+    "src/client/render/models/frag-grenade.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "812c3d603f888f2adbea51c7e79a45fae44ebb7502608b5cbe80e976b72e19f2"
+    },
+    "src/client/game/grenade-trail.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "b1afa6394623d995d3fcc67ac35fea9764b917906c0372b9f8b5cbda845e3ad0"
+    },
+    "src/client/render/models/plasma-grenade.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "cea6b5421ef5dda9e21e07e20074ef4781049d0ea9c8801a7e4d45b193498716"
+    },
+    "src/client/game/grenades.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "1830540ac95f2073612f0af1049d63f6b76e3f948ffa06e9a0709a176ead2a0a"
+    },
+    "src/client/game/bot-shot.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "f4acc8f72d5bd87e31f9be2126bcadfc152b0a6f61df090e7fc27174571c7aae"
+    },
+    "src/shared/vehicle-sim.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "4abeb6f8d22ebdfda73b5d434b52e3d19d90a42c40a1c029d317da02e218118e"
+    },
+    "src/client/render/models/vehicle-rider.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "295c20348a562adf21f0e7e5a70c8bf837b62b7e4a7c7d03b9efb5b5cb20afcc"
+    },
+    "src/client/render/models/authored-vehicles.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "e54a01e06c3bc85cc5322c5490d3ae24861fc8f8f7e888e53ee50fc190b303e5"
+    },
+    "src/client/net/remote.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7f2ab72b11682731b8dfd037b84a67adc56c618303c2c78557299fd2241fc61a"
+    },
+    "src/client/render/vehicle-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8813b721331effbb7df157f085397fe55a372ef34cf16d02cb43ae372ba77995"
+    },
+    "src/client/game/vehicles.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "9e32b993189362d7a4d036fe708a682097d1698f3b62783ed3dafc7d31f095a1"
+    },
+    "src/shared/vehicle-collision.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "d29b1fe247ef103049f2201ac921f1362f69e41b480e94ffcd7704418c4a4e4e"
+    },
+    "src/shared/movement.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "54b582ba2a994daf4781335526c57b520c9ef95d6fd37aad3fbdf59de0ca6781"
+    },
+    "src/client/game/player.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7586a908de014b410b04d2b175d3083757ef2b578f8d4484e3cc3dcfcd66a349"
+    },
+    "src/client/render/models/shell-casings.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "c0d04fd7bf6f2fb9ec34358c892488b7bec757459aaa1f159730b7cd845acd32"
+    },
+    "src/client/render/models/grenade-throw.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a34bd3e8c7db71a45f3f00b17447554c4c18d1ab8cbc3b0a2dc77ae9458d688c"
+    },
+    "src/client/render/models/sword-ignite-fx.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a61af4f5e37368eeaed403f696f6dfe5198a352e3b44eca5b05b3b68ee84343a"
+    },
+    "src/client/render/models/spartan-arms.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "461d05c1bcae6378afb4ab404aa0118f12b398a292d1eea36b7b2231776ffc58"
+    },
+    "src/client/render/models/rifle-reload.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "de3a34f62386bfab6b3b35070e5ab840e0d2c414073ecf2a6c8b024379f577c7"
+    },
+    "src/client/render/models/hand-rig.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "696c7ff1c9dd1511d6cf557817f1ae468310b95113c3a1d9d219d59324749a70"
+    },
+    "src/client/render/models/grip-fit.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "bd973877ffafc12439bd6bca82275d2e46afa77a577868e2cbc56293e5a227cd"
+    },
+    "src/client/render/models/animated-viewmodel.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "2f9ce1c5a5cb61f9e576a1c5393b7f9b374e180fd34f7c12a09fb277a1cdf6c5"
+    },
+    "src/client/game/weapon.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3401a17b1ecf3f02410681c43c1f0016d25348068c79c7b261f1aef1731f13d9"
+    },
+    "src/shared/sword-lunge.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "d9ef222800376b94eee5443ccd4292e47ba5cad7f41810dd1d180287d419ba2d"
+    },
+    "src/client/net/prediction.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "8b27bc783b3cf002109a3e2346b53cd9f40cccd142459b8f4128b4b1bc0844f3"
+    },
+    "src/client/game/match.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "fda2cf479ca5048b70402312b3afc991ff233230ab24f0891980917d3223746a"
+    },
+    "src/client/hud/objective-hud.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3fe1fb84a63fc83d68dae7af2d86cb78d8c52bf7c36aa7d952f8c83c2fa347a3"
+    },
+    "src/client/hud/reticles.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "7cb7258131a776831175321e7fb34ac59ef175fc881407ce0338b79fef01cf7e"
+    },
+    "src/client/hud/medal-announcer.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "a7cc6d66e63b979120054704420fc5247074d9a3ee41647c64da357890592683"
+    },
+    "src/client/hud/combat-medals.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "f736a4b4b48d1e15a45419b4a96f947c1cc6ac654655ed58e3edaf1fa5070059"
+    },
+    "src/client/hud/nameplates.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "3f77e84764345c08be965e1c5405eaec92da368505de4277e7457fe092a54dd9"
+    },
+    "src/client/hud/battle-rifle-scope.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "c435fc2d98f454920056f7401e27705d785424f4d229d0c00927ef738a602677"
+    },
+    "src/client/hud/hud.ts": {
+      "bundle": "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+      "sha256": "6c7f65583e88529598d6dc1ca0a9c6de5a2ecbdd8b72a5649423ff8940f4f99f"
+    },
+    "src/client/render/bases.ts": {
+      "bundle": "https://nothalo.lol/assets/bases-BfO0l-i9.js",
+      "sha256": "21eff9023618bc32c9fbc0f05572322ba653ad92539878bc8fc179a4fcbea22a"
+    },
+    "src/client/render/terrain/cliffs.ts": {
+      "bundle": "https://nothalo.lol/assets/terrain-DtU7F6R6.js",
+      "sha256": "053048938a8a4f43dad0a7dd32413efeb6bbcdc4e618bebeddcd1324b7a830e5"
+    },
+    "src/client/render/terrain/props.ts": {
+      "bundle": "https://nothalo.lol/assets/terrain-DtU7F6R6.js",
+      "sha256": "60b5883a90ea91027944a5d6e95b74bc4dd8ef4e08f85fc9c85cad54802f3b76"
+    },
+    "src/client/render/terrain.ts": {
+      "bundle": "https://nothalo.lol/assets/terrain-DtU7F6R6.js",
+      "sha256": "609b26726547040f7dc7cb00a9bff451c60b1216a1e3655a61280f897b505e33"
+    },
+    "src/client/net/session-watch.ts": {
+      "bundle": "https://nothalo.lol/assets/session-watch-BH253c2z.js",
+      "sha256": "473dd836a11aed7061e75816f4252e7d25734dc2d5dc5e5148f3bc63e14e5fa3"
+    },
+    "src/client/render/lockout.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-DmKzUjfV.js",
+      "sha256": "4ec8e84224d24a8668252b6f6bd7fea55ceff9e5ba7902459da1663f40abf3f2"
+    },
+    "src/shared/base-collision.ts": {
+      "bundle": "https://nothalo.lol/assets/blood-gulch-CrUvfvKc.js",
+      "sha256": "95f6654ce5fad7efb7feb8916c0bf4923bc5db33a65a3ce2098761314ac810fb"
+    },
+    "src/shared/blood-gulch.ts": {
+      "bundle": "https://nothalo.lol/assets/blood-gulch-CrUvfvKc.js",
+      "sha256": "b4db5113ae3cd9464018b1a0543854235ca6c5aa3153ac32ee9b2a8c960df904"
+    },
+    "src/shared/guardian-nav-data.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-nav-data-CVSh6p2X.js",
+      "sha256": "b83731e47e674ee16744deea43d1a13875d1f973351222753d1b27ec03095e62"
+    },
+    "src/shared/guardian-collision-data.ts": {
+      "bundle": "https://nothalo.lol/assets/guardian-collision-data-FTx1dFRS.js",
+      "sha256": "4a518b90acacf7a543782da6229a6137faf661b4f573213ea40e123dd29cc43f"
+    },
+    "src/client/render/resource-profile.ts": {
+      "bundle": "https://nothalo.lol/assets/load-resource-BQpFt_t5.js",
+      "sha256": "d002a9f8dae24f72f3e79f96899e72d42b767199af09090b139919d0dab850d3"
+    },
+    "src/client/render/load-resource.ts": {
+      "bundle": "https://nothalo.lol/assets/load-resource-BQpFt_t5.js",
+      "sha256": "02fd172641842472c79d1cd3cd63ab69cb08a8bd99daf6b81ee6f52594cb001a"
+    },
+    "src/shared/sandtrap-data.ts": {
+      "bundle": "https://nothalo.lol/assets/sandtrap-data-VCeeK-y1.js",
+      "sha256": "0a81523f79e349b4f8b6bb4e7e809ddd82227da0bca982c400b10e9efd273b02"
+    },
+    "src/shared/lockout-nav-data.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-nav-data-DrobkuYm.js",
+      "sha256": "c50201cc2495cd3fcf8f05923bbe9dd3b7d6037018717503718396d7b104cfc4"
+    },
+    "src/shared/epitaph-data.ts": {
+      "bundle": "https://nothalo.lol/assets/epitaph-data-D2_1W1QA.js",
+      "sha256": "0df458f90ba0a9932751e1f67cbba5179c222e3b69dfd04d9a87d87fbfdabcdb"
+    },
+    "src/shared/lockout-collision-data.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-collision-data-Bu4xJNJ3.js",
+      "sha256": "685774dd37ddb1158363cc530f24764dbaddeca4a53244171701ed2e3867232e"
+    },
+    "src/shared/the-pit-data.ts": {
+      "bundle": "https://nothalo.lol/assets/the-pit-data-BmCU1aXJ.js",
+      "sha256": "f1b32f94d1c085919162e7dd23ad1df36cbb3916fa39a50bd7d7856350d27fae"
+    },
+    "src/client/game/arena-navigation-worker.ts": {
+      "bundle": "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+      "sha256": "f13661d34d77ba3f8a6f79e178cd94bb0fd715a5888c15321d9ea3dfbb10c620"
+    },
+    "src/client/game/lockout-navigation-worker.ts": {
+      "bundle": "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+      "sha256": "86e9797c27735e1d44205bd24b0dccfab940f4f5dc53cd1a0dc8d9313246d1ab"
+    }
+  },
+  "bundles": [
+    "https://nothalo.lol/assets/BufferGeometryUtils-ytRJkp9S.js",
+    "https://nothalo.lol/assets/GLTFLoader-U4d-RfGC.js",
+    "https://nothalo.lol/assets/RoundedBoxGeometry-qkS6rS4W.js",
+    "https://nothalo.lol/assets/arena-BVSFj8R0.js",
+    "https://nothalo.lol/assets/arena-DhFseROD.js",
+    "https://nothalo.lol/assets/arena-navigation-worker-B7PL4uG7.js",
+    "https://nothalo.lol/assets/bases-BfO0l-i9.js",
+    "https://nothalo.lol/assets/blood-gulch-CrUvfvKc.js",
+    "https://nothalo.lol/assets/blood-gulch-data-DmSTTEAT.js",
+    "https://nothalo.lol/assets/blood-gulch-data-fHedBgQh.js",
+    "https://nothalo.lol/assets/connection-CitPzsqY.js",
+    "https://nothalo.lol/assets/connection-CwxJzpLY.js",
+    "https://nothalo.lol/assets/constants-jhFhoSHT.js",
+    "https://nothalo.lol/assets/cover-mKUpY_2M.js",
+    "https://nothalo.lol/assets/epitaph-data-ByEtKTT3.js",
+    "https://nothalo.lol/assets/epitaph-data-D2_1W1QA.js",
+    "https://nothalo.lol/assets/field-CUl3zNCP.js",
+    "https://nothalo.lol/assets/game-entry-BWuQ4a-o.js",
+    "https://nothalo.lol/assets/guardian-BXBLjbAy.js",
+    "https://nothalo.lol/assets/guardian-DxJ5ALvQ.js",
+    "https://nothalo.lol/assets/guardian-collision-DMgQDRag.js",
+    "https://nothalo.lol/assets/guardian-collision-data-FTx1dFRS.js",
+    "https://nothalo.lol/assets/guardian-collision-data-IUCTZ30B.js",
+    "https://nothalo.lol/assets/guardian-nav-data-CVSh6p2X.js",
+    "https://nothalo.lol/assets/guardian-nav-data-CwirDze6.js",
+    "https://nothalo.lol/assets/index-Dtuoxbwo.js",
+    "https://nothalo.lol/assets/level-data-CQG2N7tX.js",
+    "https://nothalo.lol/assets/level-data-DDXchvLr.js",
+    "https://nothalo.lol/assets/load-resource-BQpFt_t5.js",
+    "https://nothalo.lol/assets/lockout-CX2YatOj.js",
+    "https://nothalo.lol/assets/lockout-DmKzUjfV.js",
+    "https://nothalo.lol/assets/lockout-collision-data-Bu4xJNJ3.js",
+    "https://nothalo.lol/assets/lockout-collision-data-Cf0jK5JJ.js",
+    "https://nothalo.lol/assets/lockout-nav-data-BaOmda3H.js",
+    "https://nothalo.lol/assets/lockout-nav-data-DrobkuYm.js",
+    "https://nothalo.lol/assets/lockout-navigation-worker-CNpHg0wS.js",
+    "https://nothalo.lol/assets/map-C6m3XMYz.js",
+    "https://nothalo.lol/assets/menu-DL79FAAV.js",
+    "https://nothalo.lol/assets/narrows-data-Ci-a2rTi.js",
+    "https://nothalo.lol/assets/narrows-data-Ld7Dwctf.js",
+    "https://nothalo.lol/assets/preload-helper-Czpn1I53.js",
+    "https://nothalo.lol/assets/protocol-C_flp5uc.js",
+    "https://nothalo.lol/assets/rats-nest-data-BIatXvjr.js",
+    "https://nothalo.lol/assets/rats-nest-data-CCYWZkPG.js",
+    "https://nothalo.lol/assets/renderer-settings-B3Qr8Qkl.js",
+    "https://nothalo.lol/assets/runtime-BAm9jGjz.js",
+    "https://nothalo.lol/assets/sandtrap-data-BzITgHha.js",
+    "https://nothalo.lol/assets/sandtrap-data-VCeeK-y1.js",
+    "https://nothalo.lol/assets/scene-resources-C2eXww58.js",
+    "https://nothalo.lol/assets/session-watch-BH253c2z.js",
+    "https://nothalo.lol/assets/sky-CCoHAtmc.js",
+    "https://nothalo.lol/assets/sky-CkiIN7Ne.js",
+    "https://nothalo.lol/assets/teleport-CwgMUhQy.js",
+    "https://nothalo.lol/assets/terrain-DtU7F6R6.js",
+    "https://nothalo.lol/assets/textures-gEcHmWGQ.js",
+    "https://nothalo.lol/assets/the-pit-data-BmCU1aXJ.js",
+    "https://nothalo.lol/assets/the-pit-data-DFRq0w2I.js",
+    "https://nothalo.lol/assets/valhalla-data-CB0PuCdH.js",
+    "https://nothalo.lol/assets/valhalla-data-DBIOdo1Y.js"
+  ],
+  "failures": [],
+  "conflicts": [],
+  "externalized": [
+    "src/shared/blood-gulch-meta.ts",
+    "src/shared/epitaph-meta.ts",
+    "src/shared/guardian-collision-data.ts",
+    "src/shared/guardian-collision-meta.ts",
+    "src/shared/guardian-nav-data.ts",
+    "src/shared/guardian-nav-meta.ts",
+    "src/shared/hitbox-data.ts",
+    "src/shared/lockout-collision-data.ts",
+    "src/shared/lockout-nav-data.ts",
+    "src/shared/lockout-spawn-data.ts",
+    "src/shared/narrows-meta.ts",
+    "src/shared/rats-nest-meta.ts",
+    "src/shared/sandtrap-meta.ts",
+    "src/shared/the-pit-meta.ts",
+    "src/shared/valhalla-meta.ts",
+    "src/shared/blood-gulch-data.ts",
+    "src/shared/epitaph-data.ts",
+    "src/shared/narrows-data.ts",
+    "src/shared/rats-nest-data.ts",
+    "src/shared/sandtrap-data.ts",
+    "src/shared/the-pit-data.ts",
+    "src/shared/valhalla-data.ts"
+  ],
+  "licenseProvenance": "MIT license supplied by the requesting user on 2026-10-02; not independently located upstream."
+}

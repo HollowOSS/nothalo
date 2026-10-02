@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import {createMuzzleFlash,createMuzzleSmoke,type MuzzleSmoke} from '../render/models/muzzle-flash.ts'
 import {createShellCasings,type ShellCasings} from '../render/models/shell-casings.ts'
 import {SMALL_ARM_HOLD,FRAMING_SMALL_ARMS} from '../../shared/presentation.ts'
@@ -364,7 +365,7 @@ export class HeldWeapon {
       this.debug.arms = viewmodel.object
       this.debug.weapon = viewmodel.object
       this.debug.animations = Object.fromEntries((['idle', 'fire', 'reload', 'melee', 'grenade'] as const).map(action => [action, viewmodel.duration(action)]))
-      this.object.userData.animationSource = `/assets/viewmodels/${id}.glb`
+      this.object.userData.animationSource = assetUrl(`/assets/viewmodels/${id}.glb`)
       if(id==='plasma-pistol'){
         const canvas=document.createElement('canvas');canvas.width=canvas.height=64
         const ctx=canvas.getContext('2d')!,gradient=ctx.createRadialGradient(32,32,0,32,32,32)

@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import { WEAPON_SOUNDS, WEAPON_RELOAD_CUES } from './weapon-audio.ts'
 import { getSharedAudioContext, onAudioActivation, resumeAudio } from './audio-activation.ts'
 import { collisionSamples, collisionLevel, type CollisionVehicleKind } from './vehicle-collision-audio.ts'
@@ -333,7 +334,7 @@ export class CombatAudio {
   private fetchRecordings(files: readonly string[]): void {
     for (const file of files) {
       if (this.encoded.has(file)) continue
-      this.encoded.set(file, fetch(`/assets/audio/combat/${file}`, { priority: 'low' }).then(response => {
+      this.encoded.set(file, fetch(assetUrl(`/assets/audio/combat/${file}`), { priority: 'low' }).then(response => {
         if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`)
         return response.arrayBuffer()
       }).catch(error => { console.warn('Combat recording unavailable', error); return null }))

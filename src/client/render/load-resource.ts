@@ -3,11 +3,13 @@ import { MeshoptDecoder } from 'three/examples/jsm/libs/meshopt_decoder.module.j
 import { resourceUrl } from './resource-profile.ts'
 import { disposeScene } from './scene-resources.ts'
 import { Scene } from 'three'
+import { assetUrl } from '../../shared/runtime-config.ts'
 
 /** Abort obsolete map transfers, retry transient transport failures, and choose the asset
  * before downloading it. The compact asset contains the same complete scene and lighting maps. */
 export async function loadResource(url: string, signal?: AbortSignal, adaptive = true): Promise<GLTF> {
-  let selected = adaptive ? resourceUrl(url) : url
+  const fallback = assetUrl(url)
+  let selected = assetUrl(adaptive ? resourceUrl(url) : url)
   let bytes: ArrayBuffer | undefined
   for (let attempt = 0; attempt < 2; attempt++) {
     signal?.throwIfAborted()
@@ -16,7 +18,8 @@ export async function loadResource(url: string, signal?: AbortSignal, adaptive =
       // A rolling deployment can temporarily serve an older asset set. Vite and single-page asset hosts
       // answer a missing file with index.html and a 200, so an HTML body is a miss as well.
       const missing = response.status === 404 || response.headers.get('content-type')?.includes('text/html')
-      if (missing && selected !== url) { selected = url; attempt--; continue }
+      if (missing && selected !== fallback) { selected = fallback; attempt--; continue }
+      if (missing) throw new Error(`Asset is missing or returned HTML: ${selected}`)
       if (!response.ok) throw new Error(`Asset request failed (${response.status}): ${selected}`)
       bytes = await response.arrayBuffer()
       break

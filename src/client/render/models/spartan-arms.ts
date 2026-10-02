@@ -1,3 +1,4 @@
+import { assetUrl } from '../../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { clone as cloneSkinned } from 'three/examples/jsm/utils/SkeletonUtils.js'
 import { preloadSpartan, spartanMaterial, armorOf, injectShieldRim, firstPersonShieldFlash, FIRST_PERSON_SHIELD_WASH } from './character.ts'
@@ -17,7 +18,7 @@ export async function buildSpartanArms(rig: WeaponRig, team?: Team): Promise<Arm
   const mesh = skin
   const group = new THREE.Group()
   group.name = 'spartan-viewmodel-arms'
-  group.userData.source = '/assets/characters/spartan.glb'
+  group.userData.source = assetUrl('/assets/characters/spartan.glb')
   const make = (side: 'Left' | 'Right', anchor: HandAnchor) => {
     const hand = mesh.skeleton.bones.find(b => b.name === `${side}Hand`)!
     const forearm = mesh.skeleton.bones.find(b => b.name === `${side}ForeArm`)!

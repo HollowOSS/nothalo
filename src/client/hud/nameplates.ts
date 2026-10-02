@@ -1,3 +1,4 @@
+import { assetUrl } from '../../shared/runtime-config.ts'
 import * as THREE from 'three'
 import { MOVE } from '../../shared/constants.ts'
 import type { Match } from '../game/match.ts'
@@ -5,7 +6,7 @@ import type { Match } from '../game/match.ts'
 // Reference: Halo 3 GC07 gameplay, https://www.gamersyde.com/video_halo_3_gc07_multiplayer_gameplay-4354_en.html
 // Barlow is a bundled OFL approximation of the narrow HUD lettering, not a ripped game font.
 export const NAMEPLATE_CSS = `
-@font-face { font-family: 'Player HUD'; src: url('/assets/fonts/BarlowSemiCondensed-Medium.ttf') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Player HUD'; src: url('${assetUrl('/assets/fonts/BarlowSemiCondensed-Medium.ttf')}') format('truetype'); font-style: normal; font-weight: 500; font-display: swap; }
 .hud .plates { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .hud .nameplate { --plate-color: #a4dfff; position: absolute; display: flex; flex-direction: column; align-items: center;
   transform: translate(-50%, -100%); color: var(--plate-color); white-space: nowrap;
